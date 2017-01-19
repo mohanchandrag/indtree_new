@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+
+table {
+  cursor: pointer;
+  font: 10px sans-serif;
+   background-color: #B7DBFF;
+  fill-opacity: .5;
+  stroke-width: 1.5px;
+}
+.tableheader {font: 14px sans-serif;
+   background-color: #528ED6;
+   }
+
+#pageSizes
+{
+ width:75px;   
+}
+</style>
+<body>
+
+  <table border=1 class="rect" width=90%>
+  <tr><td colspan=2 rowspan=2 align=center width=45%><H1>FEED MONITORING TOOL</H1></td>
+	<td  align=center class="tableheader">Group</td>
+	<td  align=center class="tableheader">Region</td>
+	<td  align=center class="tableheader">Flow</td>
+	<td  align=center class="tableheader">Status</td>
+	<td rowspan=2  align=center><input type=button value="Submit"></td>
+	
+  </tr>
+  <tr >
+	<td align=center>
+	<select id="pageSizes" name=group >
+	<option>PB</option>
+	<option>MSST</option>
+	<option>TTS</option>
+	</select>
+	</td>
+	<td  align=center>
+	<select name=region>
+	<option>NAM</option>
+	<option>EMEA</option>
+	<option>APAC</option>
+	</select>
+
+	</td>
+	<td  align=center>
+	<select name=flow>
+	<option>Equities</option>
+	<option>Prime</option>
+	<option>Credit</option>
+	</select>
+
+	</td>
+	<td  align=center>
+	<select name=status>
+	<option>All</option>
+	<option>Running</option>
+	<option>Failed</option>
+	<option>Delayed</option>
+	<option>Not Started</option>
+	</select>
+
+	</td>
+	
+  </tr>
+  </table>
+ </body>
+
